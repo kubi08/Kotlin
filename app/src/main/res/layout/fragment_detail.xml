@@ -9,7 +9,7 @@
     tools:context=".DetailFragment">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/selectEditTextId2"
         android:layout_width="345dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
@@ -24,10 +24,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/selectEditTextId" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/selectEditTextId"
         android:layout_width="345dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
@@ -42,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/selectImageId" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/selectButtonSaveId"
         android:layout_width="160dp"
         android:layout_height="55dp"
         android:layout_marginStart="32dp"
@@ -53,13 +53,13 @@
         android:background="#FFFFFF"
         android:text="@string/selectSaveButton"
         android:textColor="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/selectButtonId"
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/selectEditTextId2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/selectButtonId"
         android:layout_width="160dp"
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
@@ -71,7 +71,7 @@
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/selectEditTextId2" />
 
     <TextView
         android:id="@+id/selectHeaderId"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/selectImageId"
         android:layout_width="345dp"
         android:layout_height="110dp"
         android:layout_marginTop="16dp"
