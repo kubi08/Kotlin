@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">KotlinLearning</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="textView2">Progress Result:</string>
+    <string name="editText1">Enter Number1</string>
+    <string name="editText2">Enter Number2</string>
+    <string name="calculator">Calculator</string>
+
+    <string name="selectedImages">selectedImages</string>
+    <string name="selectedHeaderId">Recipe Book</string>
+    <string name="selectEdit1">Yemek İsmini Giriniz</string>
+    <string name="selectEdit2">Yemek Malzemlerini Giriniz</string>
+    <string name="selectSaveButton">Resmi Kaydet</string>
+    <string name="selectButton">Resmi Seç</string>
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

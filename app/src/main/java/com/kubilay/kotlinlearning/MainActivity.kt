@@ -1,11 +1,15 @@
 package com.kubilay.kotlinlearning
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var arrays: Any
     lateinit var hashMap: HashSet<Any>
+    var num4: String=""
+     var num5: String=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -15,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val constNum: Double = 3.14 // constant
         var str: String = "Ozu"
         var boolean: Boolean = true
+        //------------------------------------------------------------------------------------------
         boolean = false
         number++
         number = constNum.toInt() // number=3
@@ -24,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         println("1:" + number++) // 1:1
         ++number // number=3
         println("2:" + --number) // 2:2
+        //------------------------------------------------------------------------------------------
         var char: Char = 'K'
         // boolean8,byte8,short16,int32,long64,float32,double64,char16,string32
         val typeConverterInt = constNum.toInt()
@@ -41,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         //ARRAYS//
     }
 
+    //----------------------------------------------------------------------------------------------
     fun array(arg: Any, arg2: String): Any {
         arrays = arrayOf("Kubi", "Ozu", 25, 27, "Artvin", "Malatya", 'E', 'K', true, false)
         var arg3 = arg
@@ -55,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         return arg3
     }
 
+    //----------------------------------------------------------------------------------------------
     class Class2 {
         var constructor = Constructor()
 
@@ -75,6 +83,7 @@ class MainActivity : AppCompatActivity() {
             return sum
         }
 
+        //------------------------------------------------------------------------------------------
         fun whenSwitchCase() {
             var lessonNote: String = "Özgem"
             when (lessonNote) {
@@ -83,6 +92,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //------------------------------------------------------------------------------------------
         fun whileLoop(i: Int) {
             var sumFactory: Int = 1
             var iFun = i
@@ -95,6 +105,7 @@ class MainActivity : AppCompatActivity() {
             println(sumFactory)
         }
 
+        //------------------------------------------------------------------------------------------
         fun hashSet() {
             var hashSet
             = hashSetOf("Gul", "Can", 45, true, true, 45, "Can")
@@ -105,20 +116,79 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        fun hashMap(){
-            var hashMap= hashMapOf<Any,Any>()
-            hashMap.put(1,"kubi")
-            hashMap.put("K",3)
-            hashMap.put("U",5)
-            hashMap.put("B",15)
+        //------------------------------------------------------------------------------------------
+        fun hashMap() {
+            var hashMap = hashMapOf<Any, Any>()
+            hashMap.put(1, "kubi")
+            hashMap.put("K", 3)
+            hashMap.put("U", 5)
+            hashMap.put("B", 15)
             hashMap.size
 
-            for (i in hashMap){
+            for (i in hashMap) {
                 println(i)
             }
         }
 
+        //------------------------------------------------------------------------------------------
+    }
+
+    fun plus(view: View) {
+        var result: Double = 0.0
+        num4 = num1.text.toString()
+        num5 = num2.text.toString()
+        if(num4!=null && num5!=null) {
+
+           result = num4.toDouble() + num5.toDouble()
+           textView2.text = result.toString()
+        }else {
+            textView2.text="Boş geçilemez"
+        }
+
 
     }
+
+    fun minus(view: View) {
+        var result: Double = 0.0
+        num4 = num1.text.toString()
+        num5 = num2.text.toString()
+        if(num4!=null && num5!=null) {
+
+            result = num4.toDouble() - num5.toDouble()
+            textView2.text = result.toString()
+        }else {
+            textView2.text="Boş geçilemez"
+        }
+
+
+    }
+
+    fun multiply(view: View) {
+        var result: Double = 0.0
+        num4 = num1.text.toString()
+        num5 = num2.text.toString()
+        if(num4!=null && num5!=null) {
+
+            result = num4.toDouble() * num5.toDouble()
+            textView2.text = result.toString()
+        }else {
+            textView2.text="Boş geçilemez"
+        }
+
+    }
+
+    fun divide(view: View) {
+        var result: Double = 0.0
+        num4 = num1.text.toString()
+        num5 = num2.text.toString()
+        if(num4=="" && num5=="") {
+
+            result = num4.toDouble() / num5.toDouble()
+            textView2.text = result.toString()
+        }else {
+            textView2.text="Boş geçilemez"
+        }
+    }
+
 
 }
